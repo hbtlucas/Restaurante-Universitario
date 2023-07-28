@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="calcula.js"></script>
+    <title>CALCULADORA RU</title>
+</head>
+<body>
+
+    <nav class="navbar" style="background-color: rgba(0, 68, 255, 0.219)">
+            <h3 style="padding-left: 20px;">Calculadora de créditos RU</h3>
+    <br><span style="padding-right: 20px; padding-top: 20px;">ByHerbert Lucas</span>
+</nav>
+<br>
+    <div class="container">
+        <h6>O objetivo dessa aplicação é ajudar os alunos da universidade <br> a administrar melhor suas refeições no restaurante</h6>
+    
+        
+        <form>
+            <label class="form-label" for="valorGasto">Valor adicionado: </label>
+            <input class="form-check" id="valorGasto" step="0.01" type="number" placeholder="R$">
+            <br>
+            
+            <label class="form-label" for="creditoanterior">Crédito anterior: </label>
+            <input class="form-check" id="creditoanterior" step="0.01" type="number" placeholder="R$">
+            <br>
+
+            <label class="form-label" for="diassemana">Dias que come na semana: </label>
+            <input class="form-check" id="diassemana" min="1" max="7" type="number" placeholder="Máx 7">
+            <br>
+
+            <label class="form-label" for="ref_por_dia">Quantas refeições por dia? (almoço e janta) </label>
+            <input class="form-check" id="ref_por_dia" min="1" max="2" type="number" placeholder="Máx 2">
+            <br>
+
+            <button class="btn btn-info" onclick="calcularFichas()"> Calcular</button>
+        </form>
+        <div id="resultado"> </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+</body>
+</html>
